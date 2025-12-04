@@ -81,6 +81,24 @@ body {
   overflow: hidden;
 }
 
+.hello {
+  color: #d4a15a;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: 500;
+  cursor: default;
+}
+
+.hero-title {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  max-width: 700px;
+  cursor: default;
+}
+
 /* Background Pattern */
 .hero-pattern {
   position: absolute;
@@ -114,22 +132,4 @@ body {
   width: 40px;
   height: 2px;
   background-color: rgba(255,255,255,0.2);
-}
-
-.hello {
-  color: #d4a15a;
-  font-size: 20px;
-  letter-spacing: 5px;
-  font-weight: 500;
-  cursor: default;
-}
-
-.hero-title {
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 1.2;
-  max-width: 700px;
-  cursor: default;
 }
