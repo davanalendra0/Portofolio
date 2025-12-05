@@ -182,9 +182,43 @@ body {
 /* Grid (Left photo, Right text) */
 .about-grid{
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 1fr 360px;
   gap: 48px;
   align-items: center;
+}
+
+/* Text column */
+.about-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.about-text p{
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  line-height: 1.95;
+  max-width: 720px;
+  color: var(--muted-white);
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+/* Button */
+.about-btn {
+  display: inline-block;
+  padding: 10px 22px;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: 0.25s ease;
 }
 
 /* Photo */
@@ -206,22 +240,4 @@ body {
   object-fit: cover;
   border-radius: 6px;
   background: #1b1b1b;
-}
-
-/* Text column */
-.about-text{
-  display: flex;
-  align-items: center;
-}
-
-.about-text p{
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 18px;
-  line-height: 1.95;
-  max-width: 720px;
-  color: var(--muted-white);
-  letter-spacing: 0.2px;
-  font-weight: 400;
-  text-align: justify;
 }
