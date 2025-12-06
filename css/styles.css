@@ -1,3 +1,11 @@
+:root{
+  --bg: rgb(9,10,12);
+  --muted-white: rgba(255,255,255,0.95);
+  --accent: #d4a15a;       /* gold */
+  --purple: #b99aff;       /* lilac/purple */
+  --neon: #d9ff00;         /* neon green/yellow */
+}
+
 /* Global */
 body {
   margin: 0;
@@ -444,35 +452,3 @@ body {
     transform: translateX(4px);
 }
 
-
-.contact-section{
-    padding: 100px 24px;
-    background: var(--bg);
-}
-
-.contact-subtitle{
-    color: var(--muted-white);
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 40px;
-}
-
-.contact-title{
-    font-size: 160px;
-    font-weight: 700;
-    line-height: 0.9;
-    color: var(--muted-white);
-}
-
-.highlight-at{
-    color: #A692FF;
-}
-
-.contact-second{
-    display: inline-block;
-    color: var(--muted-white);
-}
-
-.highlight-com{
-    color: #E4C76F;
-}
