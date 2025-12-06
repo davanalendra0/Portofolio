@@ -266,3 +266,52 @@ body {
   transition: opacity 0.15s ease;
   z-index: 9999;
 }
+
+/* Projects */
+.projects-section{
+  background: var(--bg);
+  color: var(--muted-white);
+  padding: 80px 24px;
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.projects-header{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+  justify-content: flex-start;
+}
+
+.projects-line{
+  width: 50px;
+  height: 2px;
+  background: var(--muted-gray);
+  display: block;
+}
+
+.projects-label{
+  margin: 0;
+  color: var(--accent);
+  letter-spacing: 6px;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.projects-title{
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 56px;
+  line-height: 1.02;
+  font-weight: 700;
+  color: var(--muted-white);
+  max-width: 920px;
+  letter-spacing: -0.5px;
+}
+
