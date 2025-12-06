@@ -267,7 +267,7 @@ body {
   z-index: 9999;
 }
 
-/* Projects */
+/* Projects Header */
 .projects-section{
   background: var(--bg);
   color: var(--muted-white);
@@ -284,15 +284,21 @@ body {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-bottom: 28px;
-  justify-content: flex-start;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.projects-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .projects-line{
-  width: 50px;
+  width: 38px;
   height: 2px;
   background: var(--muted-gray);
-  display: block;
+  display: inline-block;
 }
 
 .projects-label{
@@ -314,4 +320,42 @@ body {
   max-width: 920px;
   letter-spacing: -0.5px;
 }
+
+.projects-subtitle {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    font-weight: 500;
+    max-width: 900px;
+    margin: 28px auto 60px;
+    line-height: 1.4;
+    color: var(--muted-white);
+}
+
+.projects-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--muted-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 8px 10px;
+  transition: color .18s ease, transform .12s ease;
+  white-space: nowrap;
+}
+
+.projects-all .arrow{
+  font-size: 20px;
+  transform: translateY(-1px);
+  color: var(--muted-white);
+}
+
+/* Hover */
+.projects-all:hover {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
 
