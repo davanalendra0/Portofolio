@@ -133,6 +133,8 @@ body {
   font-size: 16px;
   text-decoration: none;
   color: var(--muted-gray);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
   transition: 0.25s ease;
   letter-spacing: 0.4px;
   position: relative;
@@ -155,10 +157,12 @@ body {
 
 .social-link:hover{
   color: var(--accent);
+  transform: translateX(4px);
 }
 
 .education-section,
-.experience-section {
+.experience-section,
+.certificate-section {
   background: var(--bg);
   padding: 80px 24px;
   color: var(--muted-white);
@@ -177,13 +181,14 @@ body {
   top: 0;
   width: 2px;
   height: 100%;
-  background: gold;
+  background: grey;
   opacity: 0.4;
 }
 
 /* Title */
 .edu-title,
-.exp-title {
+.exp-title,
+.crt-title {
   color: var(--accent);
   margin-bottom: 40px;
   letter-spacing: 6px;
@@ -240,4 +245,29 @@ body {
 .crt-btn:hover {
   background: var(--accent);
   color: var(--bg);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 40px 80px;
+  background: var(--bg);
+  color: rgba(255,255,255,0.85);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-left {
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+.footer-left .love {
+  color: var(--accent);
+  font-weight: 700;
 }
