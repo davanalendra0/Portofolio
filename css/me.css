@@ -34,3 +34,125 @@ body {
   z-index: 999;
 }
 
+.logo img {
+  height: 55px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: 0.25s ease;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.nav a span {
+  display: block;
+  transform: translateY(0);
+  transition: transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav a::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.08s;
+  color: white;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+.nav a:hover span {
+  transform: translateY(-100%);
+}
+
+.nav a:hover::after {
+  transform: translateY(0%);
+}
+
+/* Desc Section */
+.about-me-wrapper{
+    background: var(--bg);
+    padding: 80px 24px;
+    color: var(--muted-white);
+}
+
+.about-me-container{
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.about-me-photo img{
+    width: 100%;
+    border-radius: 10px;
+    background: #1b1b1b;
+}
+
+.about-me-content h1{
+    font-size: 46px;
+    font-weight: 700;
+    margin: 0 0 16px;
+    color: var(--accent);
+    cursor: default;
+}
+
+.about-me-content p{
+    max-width: 650px;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-bottom: 28px;
+    color: var(--muted-white);
+    text-align: justify;
+}
+
+/* Sosial Media */
+.about-me-links{
+    display: flex;
+    gap: 24px;
+}
+
+.social-link{
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--muted-gray);
+    transition: 0.25s ease;
+    letter-spacing: 0.4px;
+    position: relative;
+}
+
+.social-link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background: var(--accent);
+    transition: width 0.25s ease;
+}
+
+.social-link:hover::after{
+    width: 100%;
+}
+
+.social-link:hover{
+    color: var(--accent);
+}
