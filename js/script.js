@@ -11,3 +11,12 @@ photo.addEventListener("mousemove", (e) => {
 photo.addEventListener("mouseleave", () => {
     tooltip.style.opacity = 0;
 });
+
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".header");
+  if (window.scrollY > 10) {
+    header.style.background = "rgba(9, 10, 12, 0.55)";
+  } else {
+    header.style.background = "rgba(9, 10, 12, 0.4)";
+  }
+});

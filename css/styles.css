@@ -1,9 +1,9 @@
 :root{
   --bg: rgb(9,10,12);
   --muted-white: rgba(255,255,255,0.95);
-  --accent: #d4a15a;       /* gold */
-  --purple: #b99aff;       /* lilac/purple */
-  --neon: #d9ff00;         /* neon green/yellow */
+  --accent: #d4a15a;
+  --purple: #b99aff;
+  --neon: #d9ff00;
 }
 
 /* Global */
@@ -12,18 +12,26 @@ body {
   padding: 0;
   background-color: rgb(9,10,12);
   font-family: jetbrains;
+  scroll-behavior: smooth;
 }
 
 /* Header */
 .header {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 90px;
-  background-color: rgb(9,10,12);
+  background: rgba(9, 10, 12, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 60px;
   box-sizing: border-box;
+  transition: backdrop-filter 0.3s ease, background 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 999;
 }
 
 .logo img {
