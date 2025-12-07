@@ -502,3 +502,28 @@ body {
 .contact-email:hover .line2 {
   color: var(--neon);
 }
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 40px 80px;
+    background: var(--bg);
+    color: rgba(255,255,255,0.85);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-left {
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: default;
+}
+
+.footer-left .love {
+    color: var(--accent);
+    font-weight: 700;
+}
