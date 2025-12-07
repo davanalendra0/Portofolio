@@ -219,7 +219,7 @@ body {
   font-weight: 600;
 }
 
-.timeline-content .degree,
+.timeline-content .context,
 .timeline-content .time{
   color: var(--muted-gray);
 }
