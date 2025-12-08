@@ -12,8 +12,9 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #111;
-  font-family: jetbrains;
+  background: #222;
+  color: #fff;
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -86,7 +87,78 @@ body {
   transform: translateY(0%);
 }
 
+.project-container {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+}
 
+/* — Judul — */
+.project-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.project-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* — Gambar — */
+.project-image {
+  width: 100%;
+  max-width: 750px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.project-image:hover {
+  box-shadow: 0 0px 40px rgba(0, 0, 0, 0.35);
+  transform: scale(1.02);
+}
+
+/* — Date — */
+.project-day {
+  border-radius: 16px;
+  font-weight: 600;
+  color: #d7a960;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.project-date {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.author-box {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.author-photo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* — Content — */
+.project-content {
+  text-align: left;
+  margin-top: 30px;
+  line-height: 1.8;
+}
 
 /* Footer */
 .footer {
