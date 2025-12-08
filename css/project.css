@@ -1,0 +1,114 @@
+:root{
+  --bg: rgb(9,10,12);
+  --bg-soft: #2d2d2d;
+  --text-light: #f1f1f1;
+  --muted-white: rgba(255,255,255,0.95);
+  --accent: #d4a15a;
+  --purple: #b99aff;
+  --neon: #d9ff00;
+}
+
+/* Global */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  font-family: jetbrains;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 90px;
+  background: rgba(9, 10, 12, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  box-sizing: border-box;
+  transition: backdrop-filter 0.3s ease, background 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  z-index: 999;
+}
+
+.logo img {
+  height: 55px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.9;
+  transition: 0.25s ease;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.nav a span {
+  display: block;
+  transform: translateY(0);
+  transition: transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.nav a::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(100%);
+  transition: transform 0.32s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.08s;
+  color: white;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+.nav a:hover span {
+  transform: translateY(-100%);
+}
+
+.nav a:hover::after {
+  transform: translateY(0%);
+}
+
+
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 40px 80px;
+  background: var(--bg);
+  color: rgba(255,255,255,0.85);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.footer-left {
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+.footer-left .love {
+  color: var(--accent);
+  font-weight: 700;
+}
