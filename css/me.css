@@ -189,11 +189,11 @@ body {
 .edu-title,
 .exp-title,
 .crt-title {
-  color: var(--accent);
+  color: hsla(36, 72%, 75%, 1);
   margin-bottom: 40px;
-  letter-spacing: 6px;
-  font-weight: 600;
-  font-size: 18px;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  font-size: 25px;
   padding-left: 50px;
 }
 
@@ -211,7 +211,7 @@ body {
   border-radius: 50%;
   position: absolute;
   left: 15px;
-  top: 2px;
+  top: 5px;
 }
 
 /* Content */
@@ -221,24 +221,51 @@ body {
 }
 
 .timeline-content h3{
+  margin: 0 0 2px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.timeline-content .context {
   margin: 0 0 6px;
   font-size: 20px;
-  font-weight: 600;
+}
+
+.timeline-content .context {
+  color: white;
+}
+
+.timeline-content .time {
+  color: grey;
+  font-size: 19px;
 }
 
 .timeline-content .context,
 .timeline-content .time{
-  color: var(--muted-gray);
+  font-size: 20px;
+}
+
+.timeline-content ul li {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.timeline-content li {
+  font-size: 18px;
 }
 
 .repo-btn,
 .crt-btn {
-  display: inline-block;
-  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
   border: 1px solid var(--accent);
   color: var(--accent);
-  border-radius: 6px;
   text-decoration: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  white-space: nowrap;
 }
 
 .repo-btn:hover,
