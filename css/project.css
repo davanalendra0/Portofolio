@@ -91,7 +91,7 @@ body {
   width: 90%;
   max-width: 900px;
   margin: 40px auto;
-  text-align: center;
+  margin: 40px auto;
 }
 
 /* — Judul — */
@@ -141,6 +141,16 @@ body {
   gap: 12px;
 }
 
+.project-title,
+.project-image,
+.project-day,
+.project-date,
+.author-box {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .author-photo {
   width: 42px;
   height: 42px;
@@ -158,6 +168,56 @@ body {
   text-align: left;
   margin-top: 30px;
   line-height: 1.8;
+}
+
+/* Case */
+.case-study {
+  width: 100%;
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+.cs-container {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--text-light);
+}
+
+.cs-container {
+  counter-reset: cs;
+}
+
+.cs-item {
+  margin-bottom: 36px;
+}
+
+.cs-title {
+  counter-increment: cs;
+  position: relative;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 14px 0;
+  color: var(--accent);
+}
+
+.cs-title::before {
+  content: counter(cs) ". ";
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.cs-body p {
+  margin: 0 0 18px 0;
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--muted-white);
+}
+
+.cs-body a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 /* Footer */
