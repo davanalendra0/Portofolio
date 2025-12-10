@@ -18,6 +18,7 @@ body {
     font-weight: 700;
     margin-bottom: 35px;
     color: white;
+    cursor: default;
 }
 
 .social-button {
@@ -44,8 +45,8 @@ body {
 }
 
 .icon {
-    width: 28px;      /* 🔥 atur ukuran icon di sini */
-    height: 28px;     /* 24–32px biasanya pas */
+    width: 28px;
+    height: 28px;
     object-fit: contain;
     margin-right: 15px;
 }

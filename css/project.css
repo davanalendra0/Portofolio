@@ -17,9 +17,10 @@
 body {
   margin: 0;
   padding: 0;
-  background: #222;
   color: #fff;
-  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #111;
+  font-family: jetbrains;
   scroll-behavior: smooth;
 }
 
@@ -104,6 +105,7 @@ body {
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 25px;
+  cursor: default;
 }
 
 .project-image-wrapper {
@@ -131,11 +133,13 @@ body {
   color: #d7a960;
   margin-top: 10px;
   font-size: 20px;
+  cursor: default;
 }
 
 .project-date {
   font-size: 18px;
   opacity: 0.8;
+  cursor: default;
 }
 
 .author-box {
@@ -166,6 +170,7 @@ body {
 .author-name {
   font-size: 18px;
   font-weight: 600;
+  cursor: default;
 }
 
 /* — Content — */
@@ -251,6 +256,7 @@ body {
   color: var(--text);
   font-size: 18px;
   font-weight: 700;
+  cursor: default;
 }
 
 /* Button Container */
@@ -308,6 +314,7 @@ body {
   color: var(--text);
   font-size: 18px;
   font-weight: 700;
+  cursor: default;
 }
 
 .tech-list{

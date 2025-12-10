@@ -97,6 +97,7 @@ body {
     font-size: 48px;
     font-weight: 700;
     color: white;
+    cursor: default;
 }
 
 /* Grid Wrapper */
@@ -139,6 +140,7 @@ body {
     font-size: 14px;
     display: inline-block;
     font-weight: 600;
+    cursor: default;
 }
 
 .project-name{
@@ -146,6 +148,7 @@ body {
     font-size: 22px;
     font-weight: 700;
     color: var(--text-light);
+    cursor: default;
 }
 
 .project-tags span{
